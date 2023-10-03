@@ -1,10 +1,12 @@
 import Footer from "./components/footer/Footer";
+import Login from "./components/login/Login";
 import Menu from "./components/menu/Menu";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Products from "./pages/products/Products";
 import Users from "./pages/users/Users";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import "./styles/global.scss";
 
 function App() {
   const Layout = () => {
@@ -29,6 +31,24 @@ function App() {
     {
       path: "/",
       element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/users",
+          element: <Users />,
+        },
+        {
+          path: "/products",
+          element: <Products />,
+        },
+      ],
+    },
+    {
+      path: "/login",
+      element: <Login />,
     },
   ]);
 
