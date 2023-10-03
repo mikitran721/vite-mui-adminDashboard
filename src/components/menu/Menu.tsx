@@ -1,32 +1,21 @@
 import { Link } from "react-router-dom";
 import "./menu.scss";
+import { menu } from "../../data";
 
 const Menu = () => {
   return (
     <div className="menu">
-      <div className="item">
-        <div className="title">MAIN</div>
-        <Link to="/">
-          <img src="/home.svg" alt="home" />
-          <span className="listItemTitle">Home</span>
-        </Link>
-        <Link to="/">
-          <img src="/profile.svg" alt="home" />
-          <span className="listItemTitle">Profile</span>
-        </Link>
-      </div>
-
-      <div className="item">
-        <div className="title">MAIN</div>
-        <Link to="/">
-          <img src="/home.svg" alt="home" />
-          <span className="listItemTitle">Home</span>
-        </Link>
-        <Link to="/">
-          <img src="/profile.svg" alt="home" />
-          <span className="listItemTitle">Profile</span>
-        </Link>
-      </div>
+      {menu.map((item) => (
+        <div className="item" key={item.id}>
+          <div className="title">{item.title}</div>
+          {item.listItems.map((listItem) => (
+            <Link key={listItem.id} className="listItem" to="/">
+              <img src={listItem.icon} alt={listItem.icon} />
+              <span className="listItemTitle">{listItem.title}</span>
+            </Link>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };
