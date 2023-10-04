@@ -5,5 +5,6 @@
 - su dung ViteJS & MUI, Typescript, Sass
 - cai dat `yarn add sass`
 - cai dat `yarn add react-router-dom`
+- cai dat `yarn add recharts` su dung chart.
 
 # noi dung
