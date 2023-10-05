@@ -15,4 +15,6 @@
 - su dung Recharts de hien thi cac loai chart cho home page.
 - su dung MUI Data.grids cho Users page -dashboard.
 - su dung modal cho addnew user
-- products list
+- products list same users
+- single for view detail of product and user.
+-
