@@ -13,4 +13,5 @@
 
 - Admin dashboard; 3 giao dien: homepage, users, products
 - su dung Recharts de hien thi cac loai chart cho home page.
-- su dung MUI Data.grids cho Users page.
+- su dung MUI Data.grids cho Users page -dashboard.
+- su dung modal cho addnew user
