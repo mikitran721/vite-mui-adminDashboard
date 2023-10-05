@@ -47,11 +47,11 @@ function App() {
           element: <Products />,
         },
         {
-          path: "/user/:id",
+          path: "/users/:id",
           element: <User />,
         },
         {
-          path: "/product/:id",
+          path: "/products/:id",
           element: <Product />,
         },
       ],
