@@ -8,6 +8,7 @@
 - cai dat `yarn add recharts` su dung chart.
 - cai dat MUI data.grid `yarn add @mui/x-data-grid`
 - cai dat `yarn add @mui/material @emotion/react @emotion/styled`
+- cai dat `yarn add @tanstack/react-query`
 
 # noi dung
 
@@ -17,4 +18,8 @@
 - su dung modal cho addnew user
 - products list same users
 - single for view detail of product and user.
--
+- truy van su dung `REACT-QUERY`
+
+## Time
+
+- react-query `02:15:00`
