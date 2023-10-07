@@ -18,7 +18,7 @@
 - su dung modal cho addnew user
 - products list same users
 - single for view detail of product and user.
-- truy van su dung `REACT-QUERY`
+- truy van api: CRUD voi user su dung `REACT-QUERY`
 
 ## Time
 
