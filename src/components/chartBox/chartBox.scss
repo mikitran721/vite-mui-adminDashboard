@@ -1,48 +1,68 @@
-.chartBox{
+@import "../../styles/responsive.scss";
+
+.chartBox {
+  display: flex;
+  height: 100%;
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  .boxInfo {
+    flex: 3;
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 
-    .boxInfo{
-        flex: 3;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .title{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-        }
-
-        
+    @include sm {
+      gap: 20px;
     }
 
-    .chartInfo{
-        flex:2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
 
-        .chart{
-            height: 100%;
-            width: 100%;
-        }
-
-        .texts{
-            display: flex;
-            flex-direction: column;
-            text-align: right;
-
-            .percentage{
-                font-weight: bold;
-                font-size: 20px;
-            }
-
-            .duration{
-                font-size: 14px;
-            }
-        }
+      @include xxl {
+        font-size: 14px;
+      }
     }
 
+    h2 {
+      @include xxl {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .chartInfo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .chart {
+      height: 100%;
+      width: 100%;
+    }
+
+    .texts {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
+      .percentage {
+        font-weight: bold;
+        font-size: 20px;
+
+        @include xxl {
+          font-size: 16px;
+        }
+      }
+
+      .duration {
+        font-size: 14px;
+      }
+    }
+  }
 }
